@@ -3,162 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
     <title>My Resume</title>
   </head>
   <body>
-    <style>
-      a,
-      p {
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-      body {
-        display: flex;
-        padding: 15px;
-        background: lightgray;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      span {
-        margin-left: 5px;
-        margin-right: 5px;
-
-      }
-
-      .job-location{
-        color: #6D9BF5;
-        font-weight: 600;
-      }
-
-      .sidebar {
-        background: #e0ebfe;
-        padding-top: 40px;
-      }
-
-      section {
-        background: white;
-        padding: 0 50px;
-        padding-top: 40px;
-        padding-bottom: 50px;
-      }
-
-      .box {
-        display: flex;
-        align-items: center;
-      }
-
-      .sidebar-contacts,
-      .sidebar-techSkills {
-        padding: 0 30px;
-      }
-
-      .character__projects {
-        display: flex;
-        align-items: center;
-        gap: 100px;
-      }
-    </style>
-
-    <sidebar class="sidebar">
-      <img src="./Photo.jpg" alt="my-photo" />
-      <div class="sidebar-contacts">
-        <h3 class="title">Constact</h3>
-        <p>Phone: <a href="tel:+16722002705">+1(672)-200-2705</a></p>
-        <p>
-          Email:
-          <a href="mailto:andrii.zadorozhnii.job@gmail.com"
-            >andrii.zadorozhnii.job@gmail.com</a
-          >
-        </p>
-      </div>
-      <div class="sidebar-techSkills">
-        <h3 class="title">Constact</h3>
-        <ul>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>GIT</li>
-          <li>WebPack</li>
-          <li>JavaScript</li>
-          <li>React.js</li>
-          <li>Node.js</li>
-        </ul>
-      </div>
-      <div class="sidebar-techSkills">
-        <h3 class="title">Constact</h3>
-        <ul>
-          <li>Scrum</li>
-          <li>Agile</li>
-          <li>GTD</li>
-          <li>Teamwork</li>
-        </ul>
-      </div>
-    </sidebar>
-    <section class="character">
-      <div>
-        <h4 class="character__position">Front-End Developer</h4>
-        <h1 class="character__name">Andrii Zadorozhnii</h1>
-        <p class="character__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum a
-          debitis nobis architecto. Assumenda, tenetur aspernatur nam eius
-          ducimus officiis veritatis natus excepturi soluta, possimus culpa
-          dolorem! Dolores, dolor saepe!
-        </p>
-      </div>
-      <div class="character__projects">
-        <ol class="character__projects-links">
-          <li>
-            <a href="https://hellen.p.goit.global/"
-              >https://hellen.p.goit.global/</a
-            >
-          </li>
-          <li>
-            <a href="https://cryptohub.p.goit.global/"
-              >https://cryptohub.p.goit.global/</a
-            >
-          </li>
-          <li>
-            <a href="https://kidslike.p.goit.global/"
-              >https://kidslike.p.goit.global/</a
-            >
-          </li>
-        </ol>
-        <div class="character__projects-links__name">
-          <p>[HTML5, CSS3]</p>
-          <p>[JavaScript]</p>
-          <p>[React.js, Node.js]</p>
-        </div>
-      </div>
-      <div class="character-experiance">
-        <h3 class="title">Work Experiance</h3>
-        <div class="character-experiance__job">
-          <div class="box">
-          <h4 class="job-position">Front-End Developer</h4>
-          <span class="job-company">Freelance</span>
-        </div>
-          <div class="box">
-            <p class="job-period">September 2019 - up to now</p>
-            <span>|</span>
-            <p class="job-location">Country</p>
+    <!-- wrapper  -->
+    <div class="main-content">
+      <div class="about-me-container">
+        <!-- Main content -->
+        <div>
+          <!-- About Me -->
+          <div class="my-container">
+            <h2 class="my-profession">Front-End Developer</h2>
+            <h1 class="my-name">Andrii Zadorozhnii</h1>
+            <p class="my-descr">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum a
+              debitis nobis architecto. Assumenda, tenetur aspernatur nam eius
+              ducimus officiis veritatis natus excepturi soluta, possimus culpa
+              dolorem! Dolores, dolor saepe!
+            </p>
           </div>
-          <ul class="job-responsibilities">
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores, nihil laboriosam?
-            </li>
-          </ul>
         </div>
-        <div class="character-experiance__job">
+        <!-- My Project -->
+        <div class="project-container">
+          <h3 class="main-content-title">Projects</h3>
+
+          <ol class="project-list">
+            <li class="project-item">
+              <a href="https://hellen.p.goit.global/" class="project-item-link"
+                >https://hellen.p.goit.global/</a
+              ><span class="project-item-descr">.............................[HTML5, CSS3]</span>
+            </li>
+            <li class="project-item">
+              <a
+                href="https://cryptohub.p.goit.global/"
+                class="project-item-link"
+                >https://cryptohub.p.goit.global/</a
+              ><span class="project-item-descr">....................[JavaScript]</span>
+            </li>
+            <li class="project-item">
+              <a
+                href="https://kidslike.p.goit.global/"
+                class="project-item-link"
+                >https://kidslike.p.goit.global/</a
+              ><span class="project-item-descr">...........................[React.js, Node.js]</span>
+            </li>
+          </ol>
+        </div>
+        <!-- My Expiriance -->
+        <div class="character-experiance">
+          <h3 class="title">Work Experiance</h3>
+          <div class="character-experiance__job">
+            <div class="box">
+              <h4 class="job-position">Front-End Developer</h4>
+              <span class="job-company">Freelance</span>
+            </div>
+            <div class="box">
+              <p class="job-period">September 2019 - up to now</p>
+              <span>|</span>
+              <p class="job-location">Country</p>
+            </div>
+            <ul class="job-responsibilities">
+              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores, nihil laboriosam?
+              </li>
+            </ul>
+          </div>
+          <div class="character-experiance__job">
+            <div class="box">
+              <h4 class="job-position">Manager</h4>
+              <span class="job-company">Banderogusak & Co.</span>
+            </div>
+          </div>
           <div class="box">
-          <h4 class="job-position">Manager</h4>
-          <span class="job-company">Banderogusak & Co.</span>
-        </div>
-        </div>
-          <div class="box" style="display: flex; align-items: center">
             <p class="job-period">March 2015 - October 2018</p>
             <span>|</span>
             <p class="job-location">Country</p>
@@ -170,43 +102,118 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad.
             </li>
           </ul>
+
+          <div class="character-experiance__job">
+            <div class="box">
+              <h4 class="job-position">Manager</h4>
+              <span class="job-company">BestUA Corp.</span>
+            </div>
+            <div class="box">
+              <p class="job-period">June 2014 - February 2015</p>
+              <span>|</span>
+              <p class="job-location">Country</p>
+            </div>
+            <ul class="job-responsibilities">
+              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores, nihil laboriosam?
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="character-experiance__job">
+        <!-- Education -->
+        <div class="character__education">
+          <h3 class="title">Education</h3>
+          <h4 class="education-location">National University of Management</h4>
+          <p class="education-position">Management</p>
           <div class="box">
-          <h4 class="job-position">Manager</h4>
-          <span class="job-company">BestUA Corp.</span>
-        </div>
-          <div class="box">
-            <p class="job-period">June 2014 - February 2015</p>
+            <p class="education-period">September 2009 - June 2014</p>
             <span>|</span>
             <p class="job-location">Country</p>
           </div>
-          <ul class="job-responsibilities">
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad.
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <img
+          src="./images/Photo.jpg"
+          alt="My photo"
+          width="350px"
+          class="my-photo"
+        />
+
+        <!-- Contacts -->
+        <div class="contact-container">
+          <h3 class="sidebar-title">Contact</h3>
+          <p class="contact-item">
+            <span class="contact-type">Phone:</span>
+            <a href="tel:+16722002705" class="contact-number"
+              >+1(672)-200-2705</a
+            >
+          </p>
+          <p>
+            <span class="contact-type">Email:</span>
+
+            <a
+              href="mailto:andrii.zadorozhnii.job@gmail.com"
+              class="contact-email"
+              >andrii.zadorozhnii.job@gmail.com</a
+            >
+          </p>
+        </div>
+        <!-- Tech skills -->
+        <div class="tech-skills-container">
+          <h3 class="sidebar-title">Tech Skills</h3>
+          <ul class="skills-list">
+            <li class="skills-list-item">
+              <span class="skills-list-text">HTML5</span>
             </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores, nihil laboriosam?
+            <li class="skills-list-item">
+              <span class="skills-list-text">CSS3</span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-list-text">GIT</span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-list-text">WebPack</span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-list-text">JavaScript</span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-list-text">React.js</span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-list-text">Node.js</span>
             </li>
           </ul>
         </div>
-      </div>
-      <div class="character__education">
-        <h3 class="title">Education</h3>
-        <h4 class="education-location job-location">
-          National University of Management
-        </h4>
-        <p class="education-position">Management</p>
-        <div class="box">
-          <p class="education-period">September 2009 - June 2014</p>
-          <span>|</span>
-          <p class="job-location">Country</p>
+        <!-- Soft Skills -->
+        <div class="soft-skills-container">
+          <h3 class="sidebar-title">Soft Skills</h3>
+          <ul class="skills-list">
+            <li class="skills-list-item">
+              <span class="skills-list-text">Scrum</span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-list-text">Agile</span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-list-text">GTD</span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-list-text">Teamwork</span>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
+      </aside>
+    </div>
   </body>
 </html>
 `
